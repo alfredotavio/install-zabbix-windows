@@ -8,8 +8,8 @@ curl https://raw.githubusercontent.com/alfredotavio/install-zabbix-windows/4d1b2
 
 REM Instalar Zabbix Agent
 msiexec /l*v install-zabbix-agent-log.txt /i zabbix_agent.msi^
- SERVER=zabbix.grupomytec.com.br^
- SERVERACTIVE=zabbix.grupomytec.com.br^
- HOSTNAME=MYTEC_WIN_TESTE^
+ SERVER=IP/DNS^
+ SERVERACTIVE=IP/DNS^
+ HOSTNAME=NOME^
  TIMEOUT=15^
  /qn
