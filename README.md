@@ -2,6 +2,7 @@
 - Alterar:
 - IP/DNS - Para o IP/DNS do Servidor Zabbix
 - NOME - Para o hostname do Zabbix Agent cadastrado dentro do Zabbix Server
+- Executar via CMD Administrador
 
 cd C:\
 
