@@ -1,8 +1,9 @@
 # Instalar Zabbix Agent no Sistema Operacional Windows via Script Batch
 
 ## 🗒️ Descrição
-* O script atual incorpora o instalador do Zabbix Agent na versão 6.0.22. Caso deseje utilizar uma versão diferente do instalador, basta editar o script e ajustar a URL para a versão desejada. Você pode encontrar as diversas versões disponíveis nas [URL1](https://www.zabbix.com/download_agents) ou [URL2](https://cdn.zabbix.com/zabbix/binaries/stable/)).
+* O script atual utiliza o instalador do Zabbix Agent na versão 6.0.22. Caso deseje utilizar uma versão diferente do instalador, basta editar o script e ajustar a URL para a versão desejada. Você pode encontrar as diversas versões disponíveis nas [URL1](https://www.zabbix.com/download_agents) ou [URL2](https://cdn.zabbix.com/zabbix/binaries/stable/)).
 * Ao executar o script, será necessário especificar o endereço IP/DNS do Zabbix Server, bem como o hostname do Zabbix Agent previamente registrado no Zabbix Server.
+* O script cria uma regra no Firewall liberando a porta 10050 para entrada.
 * Certifique-se de executar o script como Administrador através do Prompt de Comando do Windows (CMD).
 
 ## ◼️ Instalação
