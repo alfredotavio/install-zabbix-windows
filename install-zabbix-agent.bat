@@ -1,15 +1,19 @@
 @ECHO OFF
 
-REM Diretório raiz
-cd C:\
+REM Definindo argumentos
+set /p server=Digite o IP/DNS do Zabbix Server: 
+set /p hostname=Digite o Hostname do Zabbix Agent: 
+
+REM Diretório temporário
+cd %TEMP%
 
 REM Baixar instalador do Zabbix Agent
-curl https://raw.githubusercontent.com/alfredotavio/install-zabbix-windows/main/zabbix_agent.msi --output zabbix_agent.msi
+curl https://cdn.zabbix.com/zabbix/binaries/stable/6.0/6.0.22/zabbix_agent-6.0.22-windows-amd64-openssl.msi --silent --output zabbix_agent.msi
 
 REM Instalar Zabbix Agent
 msiexec /l*v install-zabbix-agent-log.txt /i zabbix_agent.msi^
- SERVER=IP/DNS^
- SERVERACTIVE=IP/DNS^
- HOSTNAME=NOME^
+ SERVER=%server%^
+ SERVERACTIVE=%server%^
+ HOSTNAME=%hostname%^
  TIMEOUT=15^
  /qn
