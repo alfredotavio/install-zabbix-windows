@@ -5,7 +5,7 @@ set /p server=Digite o IP/DNS do Zabbix Server:
 set /p hostname=Digite o Hostname do Zabbix Agent: 
 
 REM Baixar instalador do Zabbix Agent
-curl https://cdn.zabbix.com/zabbix/binaries/stable/6.0/6.0.22/zabbix_agent-6.0.22-windows-amd64-openssl.msi --silent --output %TEMP%\zabbix_agent.msi
+curl https://cdn.zabbix.com/zabbix/binaries/stable/7.0/latest/zabbix_agent-7.0-latest-windows-amd64-openssl.msi --silent --output %TEMP%\zabbix_agent.msi
 
 REM Liberar porta 10050 no Firewall
 netsh advfirewall firewall add rule name="Zabbix Agent" dir=in action=allow protocol=TCP localport=10050
